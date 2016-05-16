@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sky.androidnote">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <application
+        android:allowBackup="true"
+        android:name=".App"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".CoreService"/>
+        <meta-data android:name="APP_ID" android:value="728c3badc4b61887a888c002b731d96c"/>
+        <meta-data android:name="APP_PID" android:value="google"/>
+    </application>
+
+</manifest>
+<!--APP_PID 渠道名称 APP_PID 渠道名称
+    default 万普平台(默认) QQ 腾讯应用
+    google GooglePlay 市场 3G 3G 安卓市场
+    91 91 手机劣手 360 360 应用
+    hiapk 安卓市场 baidu 百度应用
+    gfan 机锋市场* sohu 搜狐应用
+    goapk 安智市场 163 网易应用*
+    appChina 掌上应用汇 UC UC 应用商庖
+    mumayi 木蚂蚁市场* dangle 当乐游戏中心
+    eoe 优亿市场* samsung 三星乐园
+    nduo N 多市场* mmw 秱劢 MM 商庖
+    feiliu 飞流下载 xiaomi 小米市场
+    crossmo 十字猫商庖* lenovo 联想乐商庖*
+    huawei 华为智汇于 nearme NearMe 商庖-->
